@@ -101,7 +101,7 @@ SELECT * FROM Project;
 
 ***Output :***
 
-![alt text](Gambar/image-3.png)
+![alt text](gambar/image-3.png)
 
 
 ***Query MySQL Pada Tabel Project Deatil***
@@ -131,7 +131,7 @@ SELECT * FROM Project_detail;
 
 ***Output :***
 
-![alt text](image-5.png)
+![alt text](gambar/image-5.png)
 
 
 
