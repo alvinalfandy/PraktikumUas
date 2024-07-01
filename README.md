@@ -25,7 +25,7 @@ SELECT * FROM Perusahaan;
 ```
 
 ***Output :***
-![alt text](image-2.png)
+![alt text](gambar/image-2.png)
 
 
 ***Query MySQL Pada Tabel Departemen***
@@ -48,7 +48,7 @@ SELECT * FROM Departemen;
 
 ***Output :***
 
-![alt text](image-3.png)
+![alt text](gambar/image-3.png)
 
 
 ***Query MySQL Pada Tabel Karyawan***
@@ -78,7 +78,7 @@ SELECT * FROM Karyawan;
 
 ***Output :***
 
-![alt text](image-4.png)
+![alt text](gambar/image-4.png)
 
 
 ***Query MySQL Pada Tabel Project***
@@ -185,6 +185,7 @@ WHERE k.id_dept = (
 ![alt text](gambar/image-6.png)
 
 ## 3. Menampilkan Nama Karyawan yang Terlibat dalam Lebih dari Satu Proyek 
+
 ***Input :***
 ```sql
 SELECT k.nama 
@@ -193,6 +194,7 @@ JOIN Project_detail pd ON k.nik = pd.nik
 GROUP BY k.nama
 HAVING COUNT(pd.id_proj) > 1;
 ```
+
 ***Output :***
 ![alt text](gambar/image-7.png)
 
@@ -206,10 +208,12 @@ GROUP BY p.nama
 ORDER BY COUNT(pd.nik) DESC
 LIMIT 1;
 ```
+
 ***Output :***
 ![alt text](gambar/image-8.png)
 
 ## 5. Menampilkan Nama Proyek yang Diikuti oleh Karyawan dengan Gaji Pokok Kurang dari 3 Juta
+
 ***Input :***
 ```sql
 SELECT DISTINCT p.nama 
@@ -218,6 +222,7 @@ JOIN Project_detail pd ON p.id_proj = pd.id_proj
 JOIN Karyawan k ON pd.nik = k.nik
 WHERE k.gaji_pokok < 3000000;
 ```
+
 ***Output :***
 ![alt text](gambar/image-9.png)
 
