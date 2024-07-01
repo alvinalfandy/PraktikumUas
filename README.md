@@ -166,10 +166,12 @@ WHERE d.manajer_nik = (
 );
 ```
 ***Output :***
+
 ![alt text](gambar/image-1.png)
 
 ## 2.Menampilkan Nama Proyek yang dikerjakan oleh Karyawan dari Departemen 'RnD'
 ***input :***
+
 ```sql
 SELECT DISTINCT p.nama 
 FROM Project p
@@ -183,11 +185,13 @@ WHERE k.id_dept = (
 ```
 
 ***Output :***
+
 ![alt text](gambar/image-6.png)
 
 ## 3. Menampilkan Nama Karyawan yang Terlibat dalam Lebih dari Satu Proyek 
 
 ***Input :***
+
 ```sql
 SELECT k.nama 
 FROM Karyawan k
@@ -197,10 +201,12 @@ HAVING COUNT(pd.id_proj) > 1;
 ```
 
 ***Output :***
+
 ![alt text](gambar/image-7.png)
 
 ## 4.Menampilkan Nama Proyek yang melibatkan Karyawan terbanyak.
 ***Input :***
+
 ```SQL
 SELECT p.nama 
 FROM Project p
@@ -211,11 +217,13 @@ LIMIT 1;
 ```
 
 ***Output :***
+
 ![alt text](gambar/image-8.png)
 
 ## 5. Menampilkan Nama Proyek yang Diikuti oleh Karyawan dengan Gaji Pokok Kurang dari 3 Juta
 
 ***Input :***
+
 ```sql
 SELECT DISTINCT p.nama 
 FROM Project p
@@ -225,5 +233,6 @@ WHERE k.gaji_pokok < 3000000;
 ```
 
 ***Output :***
+
 ![alt text](gambar/image-9.png)
 
