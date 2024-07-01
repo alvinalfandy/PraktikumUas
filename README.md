@@ -25,6 +25,7 @@ SELECT * FROM Perusahaan;
 ```
 
 ***Output :***
+
 ![alt text](gambar/image-2.png)
 
 
