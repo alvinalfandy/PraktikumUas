@@ -101,8 +101,8 @@ SELECT * FROM Project;
 ```
 
 ***Output :***
+![image](https://github.com/alvinalfandy/PraktikumUas/assets/64345368/196de3f8-c234-468d-976e-c94894d34f79)
 
-![alt text](gambar/image-3.png)
 
 
 ***Query MySQL Pada Tabel Project Deatil***
